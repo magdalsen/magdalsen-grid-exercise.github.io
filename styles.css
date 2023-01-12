@@ -1,0 +1,78 @@
+:root {
+    --border-person-box: 10px;
+    --padding-person-box: 3rem;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 30px;
+    margin: 14vh 10vw 14vh 10vw;
+    font-size: 13px;
+    justify-items: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.person1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: var(--border-person-box);
+    padding: var(--padding-person-box);
+}
+
+.person2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: var(--border-person-box);
+    padding: var(--padding-person-box);
+}
+
+.person3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: var(--border-person-box);
+    padding: var(--padding-person-box);
+}
+
+.person4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: var(--border-person-box);
+    padding: var(--padding-person-box);
+}
+
+.person5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: var(--border-person-box);
+    padding: var(--padding-person-box);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
