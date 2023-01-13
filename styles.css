@@ -34,6 +34,9 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 9vh;
     border-radius: var(--border-person-box);
     padding: var(--padding-person-box);
     color: var(--light-grayish-blue);
@@ -127,8 +130,12 @@ img {
 @media (max-width: 375px) {
     .container {
         display: block;
+        margin: 5vh 10vw 5vh 10vw;
     }
     .person1, .person2, .person3, .person4 {
         margin: 0rem 0rem 1.5rem 0rem;
+    }
+    .person1 {
+        background-position: top right 3.5vh;
     }
   }
