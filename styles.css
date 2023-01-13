@@ -17,10 +17,6 @@ body {
     font-weight: 200;
 }
 
-html, body {
-    min-height: 100vh;
-}
-
 .container {
     display: grid;
     grid-template-rows: 270px 270px;
@@ -126,14 +122,6 @@ img {
 .container__text--3--4 {
     color: var(--very-dark-grayish-blue);
     opacity: 0.7;
-}
-
-.attribution {
-    font-size: 11px; text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 375px) {
